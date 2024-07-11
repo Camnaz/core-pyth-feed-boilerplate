@@ -44,7 +44,7 @@ npm install
   "PrivateKey": "your-private-key-here"
 }
 ```
-- Update Smart Contract Address: Open src/App.js and replace 0xYourContractAddress with your deployed contract address on the Core blockchain.
+>Once deployed, update Smart Contract Address: Open src/App.js and replace 0xYourContractAddress with your deployed contract address on the Core blockchain.
 
 ### 4. Install Babel Plugin
 Install the Babel plugin to avoid dependency issues:
