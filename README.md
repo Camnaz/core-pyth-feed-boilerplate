@@ -25,7 +25,8 @@ Before setting up the project, ensure you have the following installed:
 Clone the repository to your local machine using GitHub Desktop or Git:
 
 ```zsh
-git clone https://github.com/your-username/pyth-feed-boilerplate.git
+gh repo clone Camnaz/core-pyth-feed-boilerplate
+cd core-pyth-feed-boilerplate
 cd pyth-feed-boilerplate
 ```
 
@@ -44,13 +45,24 @@ npm install
   "PrivateKey": "your-private-key-here"
 }
 ```
->Once deployed, update Smart Contract Address: Open src/App.js and replace 0xYourContractAddress with your deployed contract address on the Core blockchain.
+### 3.1 Compile Hardhat
+
+```
+npx hardhat compile
+```
+
+>Once deployed, update Smart Contract Address: Open src/App.js and replace `0xYourContractAddress` with your deployed contract address on the Core blockchain.
 
 ### 4. Install Babel Plugin
 Install the Babel plugin to avoid dependency issues:
 
 ```zsh
 npm install --save-dev @babel/plugin-proposal-private-property-in-object
+```
+### 4.1 Navigate to frontend of project
+
+```
+cd frontend
 ```
 
 ### 5. Run the Application
@@ -66,6 +78,11 @@ Open your browser and navigate to if it has not already:
 ```arduino
 http://localhost:3000
 ```
+### 7. Conclusion
+
+Congratulations, you now have a Pyth data feed for CORE/USD, and are able to view the Core price live which is updated every few seconds. 
+You are able to use this boilerplate to imbed Pyth price feeds for Core into different Dapps, or as a learning resource.
+
 ### Troubleshooting
 Error: One of your dependencies, babel-preset-react-app, is importing the "@babel/plugin-proposal-private-property-in-object" package without declaring it in its dependencies.
 Solution: Install the Babel plugin manually:
