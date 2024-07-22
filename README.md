@@ -59,7 +59,7 @@ Install the Babel plugin to avoid dependency issues:
 ```zsh
 npm install --save-dev @babel/plugin-proposal-private-property-in-object
 ```
-### 4.5 Navigate to frontend of project
+### 4.1 Navigate to frontend of project
 
 ```
 cd frontend
